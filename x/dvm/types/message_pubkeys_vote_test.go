@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sge-network/sge/testutil/sample"
-	"github.com/sge-network/sge/utils"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/testutil/sample"
+	"github.com/furya-network/furya/utils"
+	"github.com/furya-network/furya/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

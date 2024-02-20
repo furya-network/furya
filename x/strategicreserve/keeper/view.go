@@ -3,7 +3,7 @@ package keeper
 import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sge-network/sge/x/strategicreserve/types"
+	"github.com/furya-network/furya/x/strategicreserve/types"
 )
 
 // getBookStore gets the store containing all order books.

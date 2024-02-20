@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

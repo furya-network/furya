@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/sge-network/sge/utils"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/utils"
+	"github.com/furya-network/furya/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

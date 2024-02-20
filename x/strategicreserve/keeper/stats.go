@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/sge-network/sge/utils"
-	"github.com/sge-network/sge/x/strategicreserve/types"
+	"github.com/furya-network/furya/utils"
+	"github.com/furya-network/furya/x/strategicreserve/types"
 )
 
 // SetOrderBookStats sets bet statistics in the store

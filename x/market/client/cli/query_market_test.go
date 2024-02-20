@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/sge-network/sge/testutil/network"
-	"github.com/sge-network/sge/testutil/nullify"
-	"github.com/sge-network/sge/x/market/client/cli"
-	"github.com/sge-network/sge/x/market/types"
+	"github.com/furya-network/furya/testutil/network"
+	"github.com/furya-network/furya/testutil/nullify"
+	"github.com/furya-network/furya/x/market/client/cli"
+	"github.com/furya-network/furya/x/market/types"
 )
 
 func networkWithMarketObjects(t *testing.T, n int) (*network.Network, []types.Market) {

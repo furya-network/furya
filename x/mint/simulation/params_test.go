@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/sge-network/sge/x/mint/simulation"
+	"github.com/furya-network/furya/x/mint/simulation"
 )
 
 func TestParamChangest(t *testing.T) {

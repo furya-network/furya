@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sge-network/sge/x/house/types"
+	"github.com/furya-network/furya/x/house/types"
 )
 
 // Withdraw defines a method for performing a withdrawal of coins of unused amount corresponding to a deposit.

@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sge-network/sge/x/mint/types"
+	"github.com/furya-network/furya/x/mint/types"
 )
 
 // GetParams get all parameters as types.Params

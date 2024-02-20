@@ -7,8 +7,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/sge-network/sge/x/market/keeper"
-	"github.com/sge-network/sge/x/market/types"
+	"github.com/furya-network/furya/x/market/keeper"
+	"github.com/furya-network/furya/x/market/types"
 )
 
 // SimulateMsgAddEvent simulates the add market flow

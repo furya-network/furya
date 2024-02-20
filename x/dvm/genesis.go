@@ -2,8 +2,8 @@ package dvm
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sge-network/sge/x/dvm/keeper"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/x/dvm/keeper"
+	"github.com/furya-network/furya/x/dvm/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis

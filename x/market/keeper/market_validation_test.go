@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/google/uuid"
-	"github.com/sge-network/sge/testutil/sample"
-	"github.com/sge-network/sge/x/market/types"
+	"github.com/furya-network/furya/testutil/sample"
+	"github.com/furya-network/furya/x/market/types"
 	"github.com/stretchr/testify/require"
 )
 

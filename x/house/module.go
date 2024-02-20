@@ -14,9 +14,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/sge-network/sge/x/house/client/cli"
-	"github.com/sge-network/sge/x/house/keeper"
-	"github.com/sge-network/sge/x/house/types"
+	"github.com/furya-network/furya/x/house/client/cli"
+	"github.com/furya-network/furya/x/house/keeper"
+	"github.com/furya-network/furya/x/house/types"
 )
 
 // AppModuleBasic defines the basic application module used by the house module.

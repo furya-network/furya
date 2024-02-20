@@ -1,0 +1,20 @@
+syntax = "proto3";
+package furyanetwork.furya.market;
+
+import "gogoproto/gogo.proto";
+import "furya/market/params.proto";
+import "furya/market/market.proto";
+import "furya/market/stats.proto";
+
+option go_package = "github.com/furya-network/furya/x/market/types";
+
+// GenesisState defines the market module's genesis state.
+message GenesisState {
+  // params are the parameters of the market module.
+  Params params = 1 [ (gogoproto.nullable) = false ];
+  // market_list is the list of markets that are available in the
+  // chain init.
+  repeated Market market_list = 2 [ (gogoproto.nullable) = false ];
+  // stats is the statistics of the markets
+  MarketStats stats = 3 [ (gogoproto.nullable) = false ];
+}

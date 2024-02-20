@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sge-network/sge/x/house/types"
+	"github.com/furya-network/furya/x/house/types"
 )
 
 // Deposit defines a method for performing a deposit of coins to become part of the house correspondifg to a market.

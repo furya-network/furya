@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	simappUtil "github.com/sge-network/sge/testutil/simapp"
-	"github.com/sge-network/sge/x/dvm/types"
+	simappUtil "github.com/furya-network/furya/testutil/simapp"
+	"github.com/furya-network/furya/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

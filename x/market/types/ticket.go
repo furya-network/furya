@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sge-network/sge/utils"
+	"github.com/furya-network/furya/utils"
 	"github.com/spf13/cast"
 )
 

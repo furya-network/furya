@@ -3,10 +3,10 @@ package market_test
 import (
 	"testing"
 
-	"github.com/sge-network/sge/testutil/nullify"
-	simappUtil "github.com/sge-network/sge/testutil/simapp"
-	market "github.com/sge-network/sge/x/market"
-	"github.com/sge-network/sge/x/market/types"
+	"github.com/furya-network/furya/testutil/nullify"
+	simappUtil "github.com/furya-network/furya/testutil/simapp"
+	market "github.com/furya-network/furya/x/market"
+	"github.com/furya-network/furya/x/market/types"
 	"github.com/stretchr/testify/require"
 )
 

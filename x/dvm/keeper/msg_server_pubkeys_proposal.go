@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sge-network/sge/utils"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/utils"
+	"github.com/furya-network/furya/x/dvm/types"
 )
 
 // SubmitPubkeysChangeProposal is the main transaction of DVM to add or delete the keys to the chain.

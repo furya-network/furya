@@ -19,51 +19,51 @@ jobs:
       uses: actions/checkout@v3.0.0
       with:
         ref: master
-        repository: sge-network/sge
-        path: sge
+        repository: furya-network/furya
+        path: furya
 
     - name: Checkout destination repository
       uses: actions/checkout@v3.0.0
       with:
         ref: master
-        repository: ${{ secrets.ST_REPO }}/sgejs
-        path: sgejs
+        repository: ${{ secrets.ST_REPO }}/furyajs
+        path: furyajs
         token: ${{ secrets.ST_TOKEN }}
 
     - name: Copy Proto Files
       run: |
-        cp -r sge/proto/sge sgejs/proto
-        git -C sgejs add .
-        git -C sgejs status
-        git -C sgejs config user.email "action@github.com"
-        git -C sgejs config user.name "GitHub Action"
-        git -C sgejs commit --allow-empty -am "Proto Deployment [skip ci]"
+        cp -r furya/proto/furya furyajs/proto
+        git -C furyajs add .
+        git -C furyajs status
+        git -C furyajs config user.email "action@github.com"
+        git -C furyajs config user.name "GitHub Action"
+        git -C furyajs commit --allow-empty -am "Proto Deployment [skip ci]"
 
     - name: Npm Install
       run: |
-        echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > sgejs/.npmrc
-        npm install --prefix sgejs
-        git -C sgejs checkout .
+        echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > furyajs/.npmrc
+        npm install --prefix furyajs
+        git -C furyajs checkout .
 
     - name: Delete src/codegen and types
       run: |
-        rm -rf sgejs/src/codegen
-        rm -rf sgejs/types
+        rm -rf furyajs/src/codegen
+        rm -rf furyajs/types
 
     - name: Npm Run Codegen
       run: |
-        npm run codegen --prefix sgejs
+        npm run codegen --prefix furyajs
 
     - name: Commit changes
       run: |
-        git -C sgejs add .
-        git -C sgejs config user.email "action@github.com"
-        git -C sgejs config user.name "GitHub Action"
-        git -C sgejs commit --allow-empty -am "Codegen Deployment [skip ci]"
+        git -C furyajs add .
+        git -C furyajs config user.email "action@github.com"
+        git -C furyajs config user.name "GitHub Action"
+        git -C furyajs commit --allow-empty -am "Codegen Deployment [skip ci]"
 
     - name: Determine NPM version
       run: |
-        cd sgejs
+        cd furyajs
         if [[ "${{ github.event.pull_request.title }}" == *"major"* ]]; then
           echo "NPM_VERSION=major" >> $GITHUB_ENV
         elif [[ "${{ github.event.pull_request.title }}" == *"minor"* ]]; then
@@ -74,7 +74,7 @@ jobs:
 
     - name: Bump NPM version
       run: |
-        cd sgejs
+        cd furyajs
         git status
         if [ "${{ env.NPM_VERSION }}" == "major" ]; then
           npm version major
@@ -85,13 +85,13 @@ jobs:
         fi
         git status
 
-    - name: Push sgejs
-      run: git -C sgejs push
+    - name: Push furyajs
+      run: git -C furyajs push
 
     - name: Publish NPM Package
       run: |
-        echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > sgejs/.npmrc
-        cat sgejs/.npmrc
-        cd sgejs
+        echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > furyajs/.npmrc
+        cat furyajs/.npmrc
+        cd furyajs
         ls -la
         npm publish --access=restricted --force

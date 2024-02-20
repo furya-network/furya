@@ -10,10 +10,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/sge-network/sge/consts"
-	"github.com/sge-network/sge/testutil/nullify"
-	simappUtil "github.com/sge-network/sge/testutil/simapp"
-	"github.com/sge-network/sge/x/bet/types"
+	"github.com/furya-network/furya/consts"
+	"github.com/furya-network/furya/testutil/nullify"
+	simappUtil "github.com/furya-network/furya/testutil/simapp"
+	"github.com/furya-network/furya/x/bet/types"
 )
 
 func TestBetQuerySingle(t *testing.T) {

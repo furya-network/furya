@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/sge-network/sge/testutil/network"
-	"github.com/sge-network/sge/x/mint/client/cli"
-	"github.com/sge-network/sge/x/mint/types"
+	"github.com/furya-network/furya/testutil/network"
+	"github.com/furya-network/furya/x/mint/client/cli"
+	"github.com/furya-network/furya/x/mint/types"
 	"github.com/stretchr/testify/require"
 )
 

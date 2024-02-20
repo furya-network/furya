@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/sge-network/sge/x/market/types"
+	"github.com/furya-network/furya/x/market/types"
 )
 
 var _ types.QueryServer = Keeper{}

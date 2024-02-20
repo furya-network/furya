@@ -7,10 +7,10 @@ import (
 	"github.com/golang-jwt/jwt"
 	"github.com/stretchr/testify/require"
 
-	simappUtil "github.com/sge-network/sge/testutil/simapp"
-	"github.com/sge-network/sge/x/bet/types"
+	simappUtil "github.com/furya-network/furya/testutil/simapp"
+	"github.com/furya-network/furya/x/bet/types"
 
-	markettypes "github.com/sge-network/sge/x/market/types"
+	markettypes "github.com/furya-network/furya/x/market/types"
 )
 
 func TestBetMsgServerPlaceBet(t *testing.T) {

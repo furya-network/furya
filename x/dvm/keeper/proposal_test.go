@@ -6,11 +6,11 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sge-network/sge/testutil/nullify"
-	simappUtil "github.com/sge-network/sge/testutil/simapp"
-	"github.com/sge-network/sge/utils"
-	"github.com/sge-network/sge/x/dvm/keeper"
-	"github.com/sge-network/sge/x/dvm/types"
+	"github.com/furya-network/furya/testutil/nullify"
+	simappUtil "github.com/furya-network/furya/testutil/simapp"
+	"github.com/furya-network/furya/utils"
+	"github.com/furya-network/furya/x/dvm/keeper"
+	"github.com/furya-network/furya/x/dvm/types"
 	"github.com/spf13/cast"
 	"github.com/stretchr/testify/require"
 )
